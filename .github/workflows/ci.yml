@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t devops-demo .
-      - run: docker run -d -p 3001:3001 --name test-container devops-demo
+      - run: docker run -d -p 3000:3000 --name test-container devops-demo
       - run: sleep 2
       - run: curl -f http://localhost:3000/
       - run: docker stop test-container
