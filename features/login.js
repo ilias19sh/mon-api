@@ -7,7 +7,7 @@ router.get("/login", (req, res) => {
         <h2>Login</h2>
         <form method="POST" action="/login">
             <input type="text" name="username" placeholder="Username" required /><br><br>
-            <input type="password" name="password" placeholder="Password" required /><br><br>
+            <input type="password" name="password" placeholder="Paswrd" required /><br><br>
             <button type="submit">Se connecter</button>
         </form>
     `);
