@@ -11,7 +11,9 @@ app.listen(port, () => {
   console.log(`API running on http://localhost:${port}`);
 });
 
-const registerRoutes = require("./routes/register");
+const registerRoutes = require("./features/register");
+const loginRoutes = require("./features/login");
 
 app.use(express.urlencoded({ extended: true }));
 app.use("/", registerRoutes);
+app.use("/", loginRoutes);
