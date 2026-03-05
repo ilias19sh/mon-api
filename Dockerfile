@@ -15,6 +15,7 @@ COPY . .
 
 # On dit quel port on utilise
 EXPOSE 3000
+ENV PORT=3000
 
 # On dit comment démarrer l'app
 CMD ["npm", "start"]
